@@ -56,3 +56,36 @@ function greaterThan() {
     }
     txtAusgabe.innerHTML = ausgabe;
 }
+
+
+// lev2_2
+
+let slider = document.getElementById("myRange");
+let concern = document.getElementById("concern");
+let effect = document.getElementById("effect");
+let container = document.querySelector(".slidecontainer");
+let val = document.querySelector(".airValue");
+console.log(val);
+
+
+function checkAirQuality() {
+    console.log(slider.value);
+    if (slider.value <= 50) {
+        concern.innerHTML = "Level of health concern: Good";
+        effect.innerHTML = "Level of health effect: Little or no risk";
+        container.style.background = "rgb(204, 233, 197)";
+
+    }
+    else if (slider.value > 50 && slider.value <= 100) {
+        concern.innerHTML = "Level of health concern: Moderate";
+        effect.innerHTML = "Level of health effect: Little or no risk";
+        container.style.background = "rgb(223, 226, 53)";
+    }
+    else {
+        concern.innerHTML = "Level of health concern: Unhealthy for sensitive groups";
+        effect.innerHTML = "Level of health effect: Generable publics not likely affected";
+        container.style.background = "rgb(226, 122, 53)";
+    }
+    val.innerHTML = slider.value;
+
+}
