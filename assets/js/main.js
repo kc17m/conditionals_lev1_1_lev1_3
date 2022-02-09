@@ -5,11 +5,11 @@ let result;
 
 function adult() {
     if (age.value >= 18) {
-        result = "adult";
+        result = "You are adult";
     }
     else {
         false;
-        result = "minor";
+        result = "Sorry, drivers license yet for you";
     }
     out.innerHTML = result;
 }
@@ -79,12 +79,12 @@ function checkAirQuality() {
     else if (slider.value > 50 && slider.value <= 100) {
         concern.innerHTML = "Level of health concern: Moderate";
         effect.innerHTML = "Level of health effect: Little or no risk";
-        container.style.background = "rgb(223, 226, 53)";
+        container.style.background = "rgb(220, 221, 129)";
     }
     else {
         concern.innerHTML = "Level of health concern: Unhealthy for sensitive groups";
         effect.innerHTML = "Level of health effect: Generable publics not likely affected";
-        container.style.background = "rgb(226, 122, 53)";
+        container.style.background = "rgb(230, 142, 102)";
     }
     val.innerHTML = slider.value;
 
