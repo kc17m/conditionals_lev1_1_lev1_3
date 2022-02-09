@@ -5,11 +5,11 @@ let result;
 
 function adult() {
     if (age.value >= 18) {
-        result = "volljährig";
+        result = "adult";
     }
     else {
         false;
-        result = "minderjährig";
+        result = "minor";
     }
     out.innerHTML = result;
 }
@@ -89,3 +89,33 @@ function checkAirQuality() {
     val.innerHTML = slider.value;
 
 }
+
+
+// lev2_3
+let resultDiff;
+function diff(numb) {
+    resultDiff = numb - 27;
+    if (resultDiff > 27) {
+        resultDiff * 2;
+    }
+    else {
+        resultDiff;
+    }
+    return resultDiff;
+}
+
+console.log(diff(123));
+
+// lev2_4
+let resultSum;
+
+function sum(number1, number2) {
+    resultSum = number1 + number2
+    if (number1 === number2) {
+        resultSum *= 5;
+    }
+    return resultSum;
+}
+
+console.log(sum(5, 5))
+
