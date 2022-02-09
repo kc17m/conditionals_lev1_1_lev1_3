@@ -78,7 +78,7 @@ function checkAirQuality() {
     }
     else if (slider.value > 50 && slider.value <= 100) {
         concern.innerHTML = "Level of health concern: Moderate";
-        effect.innerHTML = "Level of health effect: Little or no risk";
+        effect.innerHTML = "Level of health effect: Acceptable quality";
         container.style.background = "rgb(220, 221, 129)";
     }
     else {
